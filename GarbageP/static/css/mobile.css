@@ -1,0 +1,418 @@
+/*screen smaller than 768px*/
+@media screen and (max-width: 769px){
+
+/*navbar*/
+    .nav-overlay.open{
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 14vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(rgba(20,20,20, .9), rgba(20,20,20, .9));
+    }
+
+    .nav-overlay ul{
+        display: none;
+    }
+
+    .nav-overlay.open ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+        padding-top: 10vh;
+    }
+
+    .nav-overlay li{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .nav-overlay li a{
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+    .nav-overlay li a:hover{
+        color: #ffffff;
+    }
+
+    .nav-overlay img{
+        width: 100px;
+        margin-bottom: 25px;
+    }
+
+    .nav-overlay div{
+        color: #25bb7d;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    body.noscroll{
+        overflow-y: hidden;
+    }
+
+
+    .navbar-logo img {
+        width: 50px;
+        padding-top: 15px;
+    }
+
+    .menu-list{
+    	display: none;
+    }
+
+    #burger-container{
+        display: block;
+    }
+
+    /*global*/
+    .heading {
+        font-size: 25px;
+    }
+
+    .h-line {
+        height: 2px;
+    }
+
+    /*home page*/
+    .co-name{
+        font-size: 40px;
+    }
+
+    .co-description{
+    	font-size: 16px;
+        padding: 0 8vw;
+    }
+
+    .offshore-btn {
+        font-size: 15px;
+        padding-top: 8px;
+    }
+
+    /*about page*/
+    .line-about {
+        top: 25%;
+        left: 38%;
+        width: 24%;
+    }
+
+    .about-details {
+        font-size: 16px;
+        padding: 10% 7% 1%;
+        line-height: 25px;
+    }
+
+    /*offshore page*/
+
+    .line-offshore{
+        top: 9.5%;
+        left: 33%;
+        width: 34%;
+    }
+
+    .offshore-container{
+        padding: 65px 40px;
+    }
+
+    /*footer*/
+
+    .footer-logo{
+    	font-size: 35px;
+    	padding: 10% 8% 5%;
+    }
+
+    .footer-heading-main {
+        font-size: 23px;
+        padding-bottom: 20px;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .footer-info {
+        padding-top: 2%;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+    }
+
+    .us-contact{
+        padding-top: 12px;
+        padding-left: 45px;
+        padding-top: 2vh;
+        padding-left: 6vh;
+    }
+
+    .np-contact{
+        padding-top: 26px;
+        padding-left: 45px;
+        padding-top: 3vh;
+        padding-left: 6vh;
+    }
+
+    .bottom-footer{
+        padding-top: 6vh;
+    }
+
+
+    /*about detail page*/
+
+    .about-page .about-details, .offshore-details {
+        font-size: 15px;
+        padding: 40px 40px 0px;
+        line-height: 25px;
+    }
+
+    .about-page .line-about {
+        top: 30vh;
+        left: 33%;
+        width: 36vw;
+    }
+
+    /*team page*/
+
+    .team-container {
+        padding: 50px 10px;
+    }
+
+    .line-team {
+        left: 25%;
+        top: 20vh;
+        width: 50vw;
+    }
+
+    .box {
+        flex: 1 0 110px;
+        height: 200px;
+        flex-wrap: wrap;
+        margin: 0 11px;
+    }
+
+    .box img{
+        height: 175px;
+    }
+
+
+    /*offshore detail page*/
+
+    #ai .heading{
+        padding: 0 30px;
+    }
+
+    #ai .line-ai {
+        left: 29%;
+        top: 35vh;
+        width: 41vw;
+    }
+
+    #big-data .line-big-data {
+        left: 38%;
+        width: 23%;
+        top: 20vh;
+    }
+
+    #apps .line-apps {
+        left: 44%;
+        top: 20vh;
+        width: 11vw;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+
+}
+
+/*screen smaller than 400px*/
+@media screen and (max-width: 400px){
+
+    /*navbar page*/
+    .navbar-logo img {
+        width: 50px;
+        padding-top: 8px;
+    }
+
+    #burger-container {
+        padding-top: 24px;
+
+    }
+
+    /*home page*/
+    .co-name{
+        font-size: 30px;
+    }
+
+    .co-description{
+        font-size: 15px;
+        padding: 0 8vw;
+    }
+
+    /*offshore page*/
+
+    .offshore-title{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .offshore-info{
+        font-size: 15px;
+    }
+
+    .offshore-box img {
+        width: 40px;
+        margin: 14px auto;
+    }
+
+    .box img {
+        height: 150px;
+    }
+}
+
+/*screen smaller than 325px*/
+@media screen and (max-width: 325px){ 
+
+    .nav-overlay li {
+        font-size: 15px;
+    }
+
+    .co-name {
+        font-size: 26px;
+        padding-bottom: 8px;
+    }
+
+    .co-description {
+        font-size: 14px;
+    }   
+
+    .offshore-btn {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    /*about page*/
+
+    .line-about {
+        left: 32%;
+        top: 21vh;
+        width: 35vw;
+    }
+
+    .about-details {
+        font-size: 14px;
+        padding: 10% 8% 1%;
+        line-height: 24px;
+    }
+
+    /*offshore page*/
+
+    .line-offshore {
+        top: 21vh;
+        width: 45vw;
+        left: 28%;
+    }
+
+    .offshore-container {
+        padding: 65px 25px;
+    }
+
+    .offshore-title {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .offshore-info {
+        font-size: 14px;
+    }
+
+    /*contact*/
+
+    .footer-heading-main {
+        font-size: 20px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-info {
+        font-size: 13px;
+    }
+
+    .np-contact {
+        padding-top: 4vh;
+        padding-left: 6vh;
+    }
+
+    .bottom-footer {
+        font-size: 11px;
+    }
+
+    /*about details page*/
+    .about-page .line-about {
+        top: 31vh;
+        left: 28%;
+        width: 47vw;
+    }
+
+    .about-page .about-details, .offshore-details {
+        font-size: 14px;
+        padding: 40px 32px 0px;
+        line-height: 24px;
+    }
+
+    .line-team {
+        left: 21%;
+        top: 21vh;
+        width: 57vw;
+    }
+
+    .box img {
+        height: 130px;
+    }
+
+    /*offshore details page*/
+
+    #ai .line-ai {
+        left: 22%;
+        top: 37vh;
+        width: 53vw;
+    }
+
+    #big-data .line-big-data {
+        left: 35%;
+        width: 29vw;
+        top: 21vh;
+    }
+}
+
+/*screen larger than 768px*/
+@media screen and (min-width: 769px){   
+    .nav-overlay{
+        display: none;
+    }
+
+    .nav-overlay div{
+        color: #25bb7d;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    
+    .menu-list{
+        padding-top: 25px;
+        padding-right: 30px;
+        opacity: 1;
+        /*transition: all ease-in-out 0.9s;*/
+    }
+
+    #burger-container{
+        display: none;
+    }
+}

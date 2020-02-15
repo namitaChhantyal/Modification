@@ -1,79 +1,201 @@
-/* LOGIN FORM */
+body {
+  /* background: linear-gradient(to right, #3FB6A8, #7ED386); */
+  background: #FFFFFF;
 
-body.login {
-    background: #f8f8f8;
 }
 
-.login #header {
-    height: auto;
-    padding: 15px 16px;
-    justify-content: center;
+.container {
+  background: #FFFFFF;
+  width: 500px;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
 }
 
-.login #header h1 {
-    font-size: 18px;
+.logo {
+  float: right;
+  margin-right: 12px;
+  margin-top: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #25bb7d;
+  font-weight: 900;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+
 }
 
-.login #header h1 a {
-    color: #fff;
+.CTA {
+  width: 80px;
+  height: 40px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  z-index: 1;
+  background: #25bb7d;
+  font-size: 1em;
+  transform: rotate(-90deg);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.CTA h1 {
+  color: #777777;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.CTA:hover {
+  background: #25bb7d;
+  transform: scale(1.1);
 }
 
-.login #content {
-    padding: 20px 20px 0;
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: #25bb7d;
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
 }
 
-.login #container {
-    background: #fff;
-    border: 1px solid #eaeaea;
-    border-radius: 4px;
-    overflow: hidden;
-    width: 28em;
-    min-width: 300px;
-    margin: 100px auto;
+.active {
+  color: #25bb7d;
 }
 
-.login #content-main {
-    width: 100%;
+.rightbox {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80%;
+  width: 60%;
+  height: 100%;
+  margin-top: 30%;
 }
 
-.login .form-row {
-    padding: 4px 0;
-    float: left;
-    width: 100%;
-    border-bottom: none;
+.profile{
+  transition: opacity .5s ease-in;
+  position: absolute;
+  width: 50%;
+  margin-top:10%;
+  margin-left: 5%;
+  top:30px;
 }
 
-.login .form-row label {
-    padding-right: 0.5em;
-    line-height: 2em;
-    font-size: 1em;
-    clear: both;
-    color: #333;
+#payment .profile{
+  margin-top:12%;
+  width: 80%;
 }
 
-.login .form-row #id_username, .login .form-row #id_password {
-    clear: both;
-    padding: 8px;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #25bb7d;
+  font-size: 1em;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+
 }
 
-.login span.help {
-    font-size: 10px;
-    display: block;
+h2 {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-left: 2px;
 }
 
-.login .submit-row {
-    clear: both;
-    padding: 1em 0 0 9.4em;
-    margin: 0;
-    border: none;
-    background: none;
-    text-align: left;
+#payment h2{
+  font-size: 12px;
+  line-height: 22px;
 }
 
-.login .password-reset-link {
-    text-align: center;
+p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
+  border-top: 0;
+  width: 80%;
+  padding: 7px 0;
+  color: #777777;
 }
+
+#payment p{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
+  border-top: 0;
+}
+
+span {
+  font-size: .5em;
+  color: #777777;
+}
+
+.btn {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  color: #25bb7d;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+input {
+  border: 1px solid #dddddd;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  margin: 0;
+}
+
+.custom_button a{
+  text-decoration: none;
+  border: 1px solid #25bb7d;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #25bb7d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.custom_button{
+  display: flex;
+  margin: 10px 0;
+}
+
+/* footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+footer p {
+  border: none;
+  padding: 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #7d7d7d;
+} */

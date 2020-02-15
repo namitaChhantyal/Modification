@@ -1,0 +1,889 @@
+html{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body{
+    background-color: #fff;
+    color: #555;
+    font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+}
+
+/*burger icon*/
+#burger-container{
+	position: relative;
+    padding-top: 30px;
+    padding-right: 30px
+}
+
+#burger{
+	cursor: pointer;
+	display: block;
+}
+
+#burger span{
+	background: #555;
+	display: block;
+	width: 100px;
+	height: 14px;
+	margin-bottom: 10px;
+	position: relative;
+	top: 0;
+	transition: all ease-in-out 0.4s;
+	width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+#burger-container.open span:nth-child(2),
+#burger-container.open span:nth-child(3){
+	width: 0;
+	opacity: 0;
+}
+
+#burger-container.open span:nth-child(1){
+	transform: rotate(-45deg);
+	top: 11px;
+}
+
+#burger-container.open span:nth-child(4){
+	transform: rotate(45deg);
+	top: -10px;
+}
+
+/*navbar*/
+#nav{
+    min-height: 14vh;
+    color: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-radius: 0;
+    height: 14vh;
+    border: 1px solid #f2f2f2;
+    margin: 0;
+    background: #ffffff;
+}
+
+#nav{
+    -webkit-backface-visibility: hidden;
+}
+
+.flex-container{
+    padding: 11px 0;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.navbar-logo{
+    padding-left: 30px;
+}
+
+.navbar-logo img{
+    width: 70px;
+}
+
+.navbar-title{
+    color: #25bb7d;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.navbar-title a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: #25bb7d;
+}
+
+.navbar-content{
+	display: flex;
+}
+
+.menu-list ul{
+	padding: 0;
+    margin: 0;
+    font-size: 16px;
+	list-style: none;
+	display: flex;
+}
+
+.menu-list a{
+	padding: 0 15px;
+	text-decoration: none;
+	color: #555;
+}
+
+.menu-list a:hover{
+	color: #222;
+}
+
+/*screen smaller than 768px*/
+@media screen and (max-width: 768px){
+    
+}
+
+.wrapper{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+.heading{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.h-line{
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    background-color: #555;
+}
+
+/*home page*/
+
+.banner{
+	display: block;
+    position: relative;
+    height: 86vh;
+    text-align: center;
+
+    min-height: 575px;
+    background: linear-gradient(rgba(20, 20, 20, .1), rgba(20, 20, 20, .1)), url("/static/img/safaa.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.co-name{
+    padding-top: 35vh;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.co-description{
+    padding: 0 25vw;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.offshore-btn{
+    background-color: #25bb7d;
+    border-radius: 60px;
+    width: 200px;
+    height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.offshore-btn i{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*home page end*/
+
+/*about page*/
+#about{
+    display: block;
+    position: relative;
+    padding-top: 14vh;
+    /*height: 72vh;*/
+    padding-bottom: 14vh;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+}
+
+.about-details{
+	font-size: 18px;
+	padding: 4% 28% 1%;
+    line-height: 25px;
+    /*padding: 55px 390px 12px;*/
+}
+
+.line-about {
+    top: 30%;
+    left: 44%;
+    width: 12%;
+}
+
+#about p{
+	margin: 0;
+}
+
+.offshore-link,.about-more{
+    padding-top: 25px;
+}
+
+.more-btn{
+    background-color: #25bb7d;
+    border-radius: 60px;
+    width: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+#about i, .offshore-more i{
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+#about a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#about a:hover{
+    color: #0e3f2b;
+}
+
+/*about page end*/
+
+/*offshore page*/
+
+#offshore{
+	display: block;
+	position: relative;
+	/*height: 100vh;*/
+	padding-top: 14vh;
+        padding-bottom: 14vh;
+	text-align: center;
+}
+
+.line-offshore{
+    top: 22%;
+    left: 43%;
+    width: 14%;
+}
+
+.offshore-container{
+    display: flex;
+    padding: 45px 190px;
+    flex-wrap: wrap;
+}
+
+.offshore-box{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    flex: 1 0 250px;
+    margin: 10px;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    border-radius: 5%;
+}
+
+.offshore-box:hover{
+    border: 1px solid #999;
+}
+
+.offshore-title{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.offshore-box img{
+    width: 175px;
+    margin: 20px auto;
+}
+
+.offshore-info{
+    font-size: 16px;
+    padding: 3px 18px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+
+.offshore-more{
+    padding-top: 10px;
+}
+
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px;
+    left: 110px;
+    background: #fff;
+    padding: 35px 0px;
+}
+
+/*offshore page end*/
+
+/*contacts*/
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.contacts div{
+    padding: 0.5rem;
+}
+
+.contacts a{
+    color: #555555;
+    text-decoration: none;
+}
+
+.contacts a:hover{
+    color: #2e2e2e;
+}
+
+/*about detail page*/
+
+.about-page{
+	border-bottom: 1px solid #f2f2f2;
+	position: relative;
+	padding-top: 24vh;
+    padding-bottom: 14vh;
+}
+
+.about-page .line-about{
+    top: 34%;
+    left: 42%;
+    width: 16%;
+}
+
+.about-page .about-details,  .offshore-details{
+    font-size: 18px;
+    padding: 4% 12% 1%;
+    line-height: 25px;
+}
+
+/*about-detail-page*/
+
+/*team page*/
+
+.team{
+	display: block;
+	padding-top: 14vh;
+    padding-bottom: 14vh;
+	position: relative;
+}
+
+.line-team{
+	top: 18%;
+    left: 41%;
+    width: 18%;
+}
+
+.team-container{
+    padding: 50px 200px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: #fff;
+    height: 250px;
+    flex: 1 0 150px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.box img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+/*team page ends*/
+
+
+#ai{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    /*height: 100vh;*/
+    padding-top: 24vh;
+    padding-bottom: 14vh;
+}
+
+#ai .line-ai{
+    top: 23.5%;
+    left: 34%;
+    width: 32%;
+}
+
+#ai img{
+    width: 100px;
+    text-align: center;
+}
+
+#ai p{
+    margin-bottom: 15px;
+}
+ 
+#big-data{
+    display: block;
+    position: relative;
+    padding-top: 14vh;
+    padding-bottom: 14vh;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#big-data .line-big-data{
+    top: 25.5%;
+    left: 45%;
+    width: 10%;
+}
+
+#apps{
+    display: block;
+    position: relative;
+    padding-top: 14vh;
+    padding-bottom: 14vh;
+    height: 100vh;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#apps .line-apps{
+    top: 21.5%;
+    left: 48%;
+    width: 4%;
+}
+
+
+/*screen smaller than 768px*/
+@media screen and (max-width: 769px){
+
+    /*navbar*/
+        .nav-overlay.open{
+            opacity: 1;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 14vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            background: linear-gradient(rgba(20,20,20, .9), rgba(20,20,20, .9));
+        }
+    
+        .nav-overlay ul{
+            display: none;
+        }
+    
+        .nav-overlay.open ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            text-align: center;
+            padding-top: 10vh;
+        }
+    
+        .nav-overlay li{
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+    
+        .nav-overlay li a{
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+    
+        .nav-overlay li a:hover{
+            color: #ffffff;
+        }
+    
+        .nav-overlay img{
+            width: 100px;
+            margin-bottom: 25px;
+        }
+    
+        .nav-overlay div{
+            color: #25bb7d;
+            font-size: 20px;
+            padding: 20px 0;
+        }
+    
+        body.noscroll{
+            overflow-y: hidden;
+        }
+    
+    
+        .navbar-logo img {
+            width: 50px;
+            padding-top: 15px;
+        }
+    
+        .menu-list{
+            display: none;
+        }
+    
+        #burger-container{
+            display: block;
+        }
+    
+        /*global*/
+        .heading {
+            font-size: 25px;
+        }
+    
+        .h-line {
+            height: 2px;
+        }
+    
+        /*home page*/
+        .co-name{
+            font-size: 40px;
+        }
+    
+        .co-description{
+            font-size: 16px;
+            padding: 0 8vw;
+        }
+    
+        .offshore-btn {
+            font-size: 15px;
+            padding-top: 8px;
+        }
+    
+        /*about page*/
+        .line-about {
+            top: 25%;
+            left: 38%;
+            width: 24%;
+        }
+    
+        .about-details {
+            font-size: 16px;
+            padding: 10% 7% 1%;
+            line-height: 25px;
+        }
+    
+        /*offshore page*/
+    
+        .line-offshore{
+            top: 9.5%;
+            left: 33%;
+            width: 34%;
+        }
+    
+        .offshore-container{
+            padding: 65px 40px;
+        }
+    
+        /*footer*/
+    
+        .footer-logo{
+            font-size: 35px;
+            padding: 10% 8% 5%;
+        }
+    
+        .footer-heading-main {
+            font-size: 23px;
+            padding-bottom: 20px;
+        }
+    
+        .footer-heading {
+            font-size: 18px;
+        }
+    
+        .footer-info {
+            padding-top: 2%;
+            font-size: 15px;
+            letter-spacing: 0.2px;
+        }
+    
+        .us-contact{
+            padding-top: 12px;
+            padding-left: 45px;
+            padding-top: 2vh;
+            padding-left: 6vh;
+        }
+    
+        .np-contact{
+            padding-top: 26px;
+            padding-left: 45px;
+            padding-top: 3vh;
+            padding-left: 6vh;
+        }
+    
+        .bottom-footer{
+            padding-top: 6vh;
+        }
+    
+    
+        /*about detail page*/
+    
+        .about-page .about-details, .offshore-details {
+            font-size: 15px;
+            padding: 40px 40px 0px;
+            line-height: 25px;
+        }
+    
+        .about-page .line-about {
+            top: 30vh;
+            left: 33%;
+            width: 36vw;
+        }
+    
+        /*team page*/
+    
+        .team-container {
+            padding: 50px 10px;
+        }
+    
+        .line-team {
+            left: 25%;
+            top: 20vh;
+            width: 50vw;
+        }
+    
+        .box {
+            flex: 1 0 110px;
+            height: 200px;
+            flex-wrap: wrap;
+            margin: 0 11px;
+        }
+    
+        .box img{
+            height: 175px;
+        }
+    
+    
+        /*offshore detail page*/
+    
+        #ai .heading{
+            padding: 0 30px;
+        }
+    
+        #ai .line-ai {
+            left: 29%;
+            top: 35vh;
+            width: 41vw;
+        }
+    
+        #big-data .line-big-data {
+            left: 38%;
+            width: 23%;
+            top: 20vh;
+        }
+    
+        #apps .line-apps {
+            left: 44%;
+            top: 20vh;
+            width: 11vw;
+        }
+    
+        ::-webkit-scrollbar {
+            width: 0px;  /* remove scrollbar space */
+            background: transparent;  /* optional: just make scrollbar invisible */
+        }
+    
+    }
+    
+    /*screen smaller than 400px*/
+    @media screen and (max-width: 400px){
+    
+        /*navbar page*/
+        .navbar-logo img {
+            width: 50px;
+            padding-top: 8px;
+        }
+    
+        #burger-container {
+            padding-top: 24px;
+    
+        }
+    
+        /*home page*/
+        .co-name{
+            font-size: 30px;
+        }
+    
+        .co-description{
+            font-size: 15px;
+            padding: 0 8vw;
+        }
+    
+        /*offshore page*/
+    
+        .offshore-title{
+            font-size: 20px;
+            padding-top: 15px;
+        }
+    
+        .offshore-info{
+            font-size: 15px;
+        }
+    
+        .offshore-box img {
+            width: 40px;
+            margin: 14px auto;
+        }
+    
+        .box img {
+            height: 150px;
+        }
+    }
+    
+    /*screen smaller than 325px*/
+    @media screen and (max-width: 325px){ 
+    
+        .nav-overlay li {
+            font-size: 15px;
+        }
+    
+        .co-name {
+            font-size: 26px;
+            padding-bottom: 8px;
+        }
+    
+        .co-description {
+            font-size: 14px;
+        }   
+    
+        .offshore-btn {
+            font-size: 13px;
+            padding-top: 10px;
+        }
+    
+        /*about page*/
+    
+        .line-about {
+            left: 32%;
+            top: 21vh;
+            width: 35vw;
+        }
+    
+        .about-details {
+            font-size: 14px;
+            padding: 10% 8% 1%;
+            line-height: 24px;
+        }
+    
+        /*offshore page*/
+    
+        .line-offshore {
+            top: 21vh;
+            width: 45vw;
+            left: 28%;
+        }
+    
+        .offshore-container {
+            padding: 65px 25px;
+        }
+    
+        .offshore-title {
+            font-size: 18px;
+            padding-top: 15px;
+        }
+    
+        .offshore-info {
+            font-size: 14px;
+        }
+    
+        /*contact*/
+    
+        .footer-heading-main {
+            font-size: 20px;
+        }
+    
+        .footer-heading {
+            font-size: 16px;
+        }
+    
+        .footer-info {
+            font-size: 13px;
+        }
+    
+        .np-contact {
+            padding-top: 4vh;
+            padding-left: 6vh;
+        }
+    
+        .bottom-footer {
+            font-size: 11px;
+        }
+    
+        /*about details page*/
+        .about-page .line-about {
+            top: 31vh;
+            left: 28%;
+            width: 47vw;
+        }
+    
+        .about-page .about-details, .offshore-details {
+            font-size: 14px;
+            padding: 40px 32px 0px;
+            line-height: 24px;
+        }
+    
+        .line-team {
+            left: 21%;
+            top: 21vh;
+            width: 57vw;
+        }
+    
+        .box img {
+            height: 130px;
+        }
+    
+        /*offshore details page*/
+    
+        #ai .line-ai {
+            left: 22%;
+            top: 37vh;
+            width: 53vw;
+        }
+    
+        #big-data .line-big-data {
+            left: 35%;
+            width: 29vw;
+            top: 21vh;
+        }
+    }
+    
+    /*screen larger than 768px*/
+    @media screen and (min-width: 769px){   
+        .nav-overlay{
+            display: none;
+        }
+    
+        .nav-overlay div{
+            color: #25bb7d;
+            font-size: 20px;
+            padding: 20px 0;
+        }
+        
+        .menu-list{
+            padding-top: 25px;
+            padding-right: 30px;
+            opacity: 1;
+            /*transition: all ease-in-out 0.9s;*/
+        }
+    
+        #burger-container{
+            display: none;
+        }
+    }
+
+
+

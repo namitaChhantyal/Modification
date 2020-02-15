@@ -1,6 +1,6 @@
 .slider-holder
         {
-            /* width: 800px; */
+            width: 800px;
             height: 400px;
             background-color: yellow;
             margin-left: auto;
@@ -8,14 +8,13 @@
             margin-top: 0px;
             text-align: center;
             overflow: hidden;
-            height: 600px;
         }
        
         .image-holder
         {
-            /* width: 2400px; */
+            width: 2400px;
             background-color: red;
-            /* height: 400px; */
+            height: 400px;
             clear: both;
             position: relative;
            
@@ -23,7 +22,6 @@
             -moz-transition: left 2s;
             -o-transition: left 2s;
             transition: left 2s;
-            height: 600px;
         }
        
         .slider-image
@@ -32,6 +30,7 @@
             margin: 0px;
             padding: 0px;
             position: relative;
+            height:600px;
         }
        
         #slider-image-1:target ~ .image-holder

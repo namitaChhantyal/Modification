@@ -1,5 +1,4 @@
-{% extends 'index.html' %}
-{% block content %}
+<!-- {% block content %}  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="static/css/login.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Muli:400,700">
     <title>Document</title>
 </head>
 <body>
     <!-- {% load static %} -->
     <div class="container">
-        <div id="logo"><h1 class="logo">Safa Sahar.</h1>
+        <div id="logo"><h1 class="logo">Safaa Sahar.</h1>
           <div class="CTA">
             <h1>Save environment</h1>
             </div>
@@ -24,14 +24,18 @@
           <div class="profile">
             <form method="post">
               {% csrf_token %}
-              <form method="post" action="payment.html">
+              <form method="post" action="Templates/payment.html">
             <h2>House no.</h2>
             <p><input type="text" name="houseNo"/></p>
             <h2>Owner's name</h2>
             <p><input type="text" name="name"/></p>
-            <input type="submit" name="submit" value="LogIn" class="btn"/>
-              {{ form.as_p }}
-            
+            <h2>Password</h2>
+            <p><input type="password" name="password"/></p>
+            <div class="custom_button"><a href="{% url 'payment' %}">
+              Login
+             </a></div>
+              <!-- {{ form.as_p }} -->
+             
             </form>
             
           </div>  
@@ -42,4 +46,4 @@
 </body>
 </html>
 
-{% endblock %}
+<!-- {% endblock %} -->

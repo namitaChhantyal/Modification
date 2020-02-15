@@ -1,4 +1,4 @@
-footer {
+/* footer {
     background: var(--clr3);
     padding: 50px;
     width: 100%;
@@ -69,4 +69,28 @@ footer {
     padding: 0 50px;
   }
   
-  
+   */
+   
+   .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.contacts div{
+    padding: 0.5rem;
+}
+
+.contacts a{
+    color: #555555;
+    text-decoration: none;
+}
+
+.contacts a:hover{
+    color: #2e2e2e;
+}

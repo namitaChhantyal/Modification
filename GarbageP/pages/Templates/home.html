@@ -1,28 +1,173 @@
 {% extends 'index.html' %}
 {% block content %}
 
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="static/css/home.css" />
-        <!-- <script type="text/javascript" src="static/js/home.js" ></script> -->
-    </head>
-        <body>
-            <div class="slider-holder">
-                <span id="slider-image-1"></span>
-                <span id="slider-image-2"></span>
-                <span id="slider-image-3"></span>
-                <div class="image-holder">
-                    <img src="static/img/1.jpg" class="slider-image" />
-                    <img src="static/img/2.jpg" class="slider-image" />
-                    <img src="static/img/3.jpg" class="slider-image" />
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Safaa Sahar. </title>
+
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mobile.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Muli:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="flex-container">
+                <div class="navbar-logo">
+                    <!--<a href="#home"><img src="assets/image/brilltech-logo.png" class="img-responsive"></a>-->
+                    <div class="navbar-title"><a href="{% url 'home' %}">Safaa Sahar.</a></div>
+
                 </div>
-                <div class="button-holder">
-                    <a href="#slider-image-1" class="slider-change"></a>
-                    <a href="#slider-image-2" class="slider-change"></a>
-                    <a href="#slider-image-3" class="slider-change"></a>
+                <div class="navbar-content">
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                        </ul>   
+                    </div>
+                        
+                    <div id="burger-container">
+                        <div id="burger">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>     
+                        </div>      
+                    </div>
+                </div>
+            </div>          
+        </nav>
+
+        <div class="nav-overlay">
+            <ul>
+                <li><div>Safaa Sahar.</div></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="wrapper">
+
+        <div id="home" class="banner">
+            <div class="heading co-name">Safaa Sahar.</div>
+            <div class="co-description">Reduce. Reuse. Recycle. </div>
+            <div class="offshore-link">
+                <a href="#offshore"> 
+                    <div class="btn offshore-btn">
+                        Need Solution 
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>                                  
+        </div>
+
+        <div id="about">
+            <div class="heading" >About us</div>
+            <div class="h-line line-about"></div>
+            <div class="about-details">
+                <p>
+                    Safaa Sahar is an initiative to reduce waste and make easy payments. We provide this this this services. Safaa Sahar is an initiative to reduce waste and make easy payments. Safaa Sahar is an initiative to reduce waste and make easy payments.
+                </p>
+            </div>
+
+            <div class="about-more">
+                <a href="{% url 'about' %}"> 
+                    <div class="btn more-btn">
+                        more
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="offshore">
+            <div class="heading">Management</div>
+            <div class="h-line line-offshore"></div>
+
+            <div class="offshore-container">
+                <div class="offshore-box">
+                    <!--<div class="offshore-title"><br/>Khalisisi </div>-->
+                    <img src="static/img/khalisisis.jpg" class="img-responsive">
+                    <div class="offshore-info"> 
+                        Khaalisisi connects waste-entrepreneurs with waste-sellers through their platform for efficient mobilization of recyclable trash.
+                    </div>
+                    <div class="offshore-more">
+                        <a href="https://khaalisisi.com/" target="blank">
+                            <div class="btn more-btn">
+                                more
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>                   
+                </div>
+                <div class="offshore-box">
+                    <!--<div class="offshore-title">Doko <br/> Recyclers</div>-->
+                    <img src="static/img/doko.jpg" class="img-responsive">
+                    <div class="offshore-info"> 
+                        Doko recyclers implement methods to help you segregate your waste at its source into different categories before it enters the waste stream.
+                    </div>
+                    <div class="offshore-more">
+                        <a href="https://www.dokorecyclers.com/" target="blank">
+                            <div class="btn more-btn">
+                                more
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>       
+                </div>
+                <div class="offshore-box">
+                    <!--<div class="offshore-title">Bio Comp<br/>Nepal</div>-->
+                    <img src="static/img/biocomp.jpg" class=" img-responsive">
+                    <div class="offshore-info"> 
+                        Biocomp Nepal is a socially and environmentally responsible private company.
+                    </div>
+                    <div class="offshore-more">
+                        <a href="http://biocompnepal.com/" target="blank">
+                            <div class="btn more-btn">
+                               more
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>       
                 </div>
             </div>
-        </body>
+        </div>
+
+        
+    </section>
+
+        <!-- <div class="contacts">
+            <div>Safaa Sahar</div><span>|</span>
+            <div>Kathmandu, Nepal</div><span>|</span>
+            <div>
+                <a href="tel:+9779849596133">+977 9849596133</a> ,
+                <a href="tel:+977014254194"> +977 01 4254194</a>
+            </div><span>|</span>
+            <div><a href="https://goo.gl/maps/na53a5p4AkK2" target="blank">Find us on google map</a></div>
+            <div><a href="https://khaalisisi.com/" target="blank">Find us on google map</a></div>
+        </div> -->
+
+
+    <script type="text/javascript" src="/js/custom.js"></script>
+
+</body>
 </html>
 
 {% endblock %}

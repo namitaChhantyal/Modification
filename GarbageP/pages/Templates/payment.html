@@ -1,1 +1,47 @@
-<h1>this is payment page</h1>
+<!-- {% block content %}  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/login.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- {% load static %} -->
+    <div class="container" id="payment">
+        <div id="logo"><h1 class="logo">Safaa Sahar.</h1>
+          <div class="CTA">
+            <h1>Save environment</h1>
+            </div>
+        </div>
+        <div class="leftbox">
+          
+        </div>
+        <div class="rightbox">
+          <div class="profile">
+            <h2>
+            <p>House no:456</p>
+            <p>Due Amount: Rs. 1000</p> 
+            <p>Month: 2 month remaining</p>
+            <p>Fine: Rs 200</p>
+            </h2>
+            <div class="custom_button">
+              <a href="">Pay</a><br/>
+               <a href="{% url 'home' %}">Logout</a><br/>
+            </div> 
+          </div>  
+        </div>
+      </div>
+      
+   
+</body>
+</html>
+
+<!-- {% endblock %} -->
+
+
+<!-- {% for page in pages %}
+    {{page.houseno}}
+{% endfor %} -->
